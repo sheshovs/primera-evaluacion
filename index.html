@@ -7,34 +7,59 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="assets/css/main.css"/>
-    <link rel="stylesheet" href="assets/css/fontello.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" 
+        crossorigin="anonymous" />
 </head>
 <body>
-    <header class= "encabezado">
-        <div class = "cuerpo">
-        <div class = "btn-menu">
-            <label for= "btn-menu" class ="icon-menu"></label>
-        </div>    
-            <div class = "logo">
-                <h1>Top Games</h1>
+    <div id="fondo"></div>
+    <div class="contenedor-principal">
+        <header class= "encabezado">
+            <div class = "container">
+
+                <div class = "logo">
+                    <i class="fas fa-bars" onclick='abrirMenu()'></i>
+                    <h1>Top Games</h1>
+                </div>
+
+                <nav class= "menu">
+                    <a href= "#"> Iniciar sesion </a>
+                    <a href= "#"> Registrarte </a>
+                </nav>
             </div>
-            <nav class= "menu">
-                <a href= "#"> Iniciar sesion </a>
-                <a href= "#"> Registrarte </a>
-            </nav>
-        </div>
-    </header>
-<input type= "checkbox" id="btn-menu"> 
-<div class = "cuerpo-menu">
-    <div class="contenido-menu">
-        <nav class = "novedades">
-            Novedades
-            <a href="#">Nuevos Juegos</a>
-            <a href="#">Top Semanales</a>
-            <a href="#">Mejores Descuentos</a>
-        </nav>
-        <label for="btn-menu" class="icon-equis"></label>
+        </header>
+        <div class = "cuerpo-menu">
+            <div class="contenido-menu">
+                <div class="titulo-menu">
+                    <h3>Novedades</h3>
+                    <i class="fas fa-times-circle" onclick='cerrarMenu()'></i>
+                </div>
+
+                <nav>
+                    <a href="#">Nuevos Juegos</a>
+                    <a href="#">Top Semanales</a>
+                    <a href="#">Mejores Descuentos</a>
+                </nav>
+                
+            </div>
+        </div>  
     </div>
-</div>  
+    
+    <script>
+
+        var menu = document.querySelector('.cuerpo-menu');
+
+        const abrirMenu = () => {
+            menu.classList.add('mostrar');
+        };
+
+        const cerrarMenu = () => {
+            menu.classList.remove('mostrar');
+        };
+
+
+    </script>
+
+
 </body>
 </html>
