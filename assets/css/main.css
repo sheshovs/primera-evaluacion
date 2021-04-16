@@ -168,3 +168,56 @@
         background: #1f1f1f;
     }
   
+    /* Contenido principal */
+
+    main.contenedor{
+        width: 90%;
+        max-width: 1200px;
+        margin: 50px auto 0 auto;
+    }
+    .imagen-principal{
+        background-image: url('/assets/img/game1.webp');
+        background-size: cover;
+        background-position: center bottom;
+        width: 100%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        color:white;
+        border-radius: 30px;
+        padding: 50px;
+        font-weight: 100;
+        box-shadow: 0 5px 20px rgba(255, 255, 255, .2);
+    }
+    .imagen-principal h1{
+        font-size: 56px;
+    }
+    .imagen-principal p{
+        font-size: 24px;
+    }
+    .btn-precio{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* margin-top: 30px; */
+    }
+    .btn-precio button{
+        width: 200px;
+        height: 60px;
+        border:none;
+        border-radius: 50px;
+        background-color: #fc2153;
+        color: white;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 100;
+        font-family: 'Concert One', sans-serif;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+    }
+    .btn-precio h3{
+        font-size: 54px;
+        font-weight: 100;
+    }
