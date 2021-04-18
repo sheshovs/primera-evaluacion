@@ -10,9 +10,9 @@
         font-family: 'Concert One', sans-serif;
     }
     #fondo{
-        position: absolute;
+        position: fixed;
         width: 100%;
-        height: 140vh;
+        height: 100vh;
         background: url('../img/fondo.jpg');
         background-size: cover;
         background-position: center;
@@ -52,6 +52,9 @@
         align-items: center;
         justify-content: space-between;
         height: 40px;
+    }
+    .logo .texto-logo{
+        text-decoration: none;
     }
 
     .logo i {
@@ -135,7 +138,7 @@
     .contenido-menu{
         width: 100%;
         max-width: 250px;
-        background: #1c1c1c;
+        background: rgb(1, 60, 71);
         height: 120vh;
         position: relative;
         transition: all 500ms ease;
@@ -165,7 +168,7 @@
     }
     .contenido-menu nav a:hover{
         border-left: 5px solid #c7c7c7;
-        background: #1f1f1f;
+        background: rgba(255 , 255, 255,.1);
     }
   
     /* Contenido principal */
@@ -189,6 +192,7 @@
         padding: 50px;
         font-weight: 100;
         box-shadow: 0 5px 20px rgba(255, 255, 255, .2);
+        margin-bottom: 50px;
     }
     .imagen-principal h1{
         font-size: 56px;
@@ -196,18 +200,24 @@
     .imagen-principal p{
         font-size: 24px;
     }
+    .juegos-secundarios{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
     .imagen-juego1{
-        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
         background-image: url('/assets/img/game2.png');
+        background-size:cover;
+        background-position: top center;
         width: 48%;
         height: 300px;
         color: white;
         padding: 50px;
         border-radius: 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-
+        box-shadow: 0 5px 20px rgba(255, 255, 255, .2);
     }
     .imagen-juego1 h3{
         font-size: 40px;
@@ -217,17 +227,18 @@
         
     }
     .imagen-juego2{
-        margin-top: -297px;
-        margin-left: auto;
-        background-image: url('/assets/img/game3.png');
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        background-image: url('/assets/img/game3.jpg');
+        background-size:cover;
+        background-position: top center;
         width: 48%;
         height: 300px;
         border-radius: 30px;
         color: white;
         padding: 50px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
+        box-shadow: 0 5px 20px rgba(255, 255, 255, .2);
     }
     .imagen-juego2 h3{
         font-size: 35px;
@@ -256,6 +267,85 @@
     .btn-precio h3{
         font-size: 54px;
         font-weight: 100;
+    }
+
+    .titulo-juegos{
+        display: flex;
+        flex-direction: column;
+        color:white;
+    }
+    .titulo-juegos .titulo{
+        font-size: 32px;
+        margin: 10px 0;
+    }
+
+    .top-juegos{
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .top-juegos .juego{
+        width: 210px;
+        margin: 0 10px 30px 10px;
+    }
+    .top-juegos .juego:hover{
+        cursor:url('../img/mano.png'), pointer;
+    }
+    
+    .top-juegos .juego .img-juego{
+        background-image: url('../img/juego1.jpg');
+        background-position: top center;
+        background-size: 100%;
+        transition: background-size .2s ease;
+        -moz-transition: background-size .2s ease;
+        -ms-transition: background-size .2s ease;
+        -o-transition: background-size .2s ease;
+        -webkit-transition: background-size .2s ease;
+        width: 100%;
+        height: 270px;
+        border-radius: 20px;
+        margin-bottom: 10px;
+        box-shadow: 0 5px 20px rgba(255, 255, 255, .2);
+        border: 1px solid rgba(255, 255, 255, .5);
+    }
+    .top-juegos .juego:nth-child(2) .img-juego{
+        background-image: url('../img/juego2.jpg');
+        background-position: top center;
+        background-size: 100%;
+    }
+    .top-juegos .juego:nth-child(3) .img-juego{
+        background-image: url('../img/juego3.jpeg');
+        background-position: top center;
+        background-size: 100%;
+    }
+    .top-juegos .juego:nth-child(4) .img-juego{
+        background-image: url('../img/juego4.jpg');
+        background-position: top center;
+        background-size: 100%;
+    }
+    .top-juegos .juego:nth-child(5) .img-juego{
+        background-image: url('../img/juego5.jpg');
+        background-position: top center;
+        background-size: 100%;
+    }
+    .top-juegos .juego:nth-child(6) .img-juego{
+        background-image: url('../img/juego6.jpg');
+        background-position: top center;
+        background-size: 100%;
+    }
+    .top-juegos .juego:nth-child(7) .img-juego{
+        background-image: url('../img/juego7.jpg');
+        background-position: top center;
+        background-size: 100%;
+    }
+    .top-juegos .juego:hover .img-juego{
+        background-size: 105%;
+    }
+    .top-juegos .juego .juego-titulo{
+        text-align:center;
+        font-size: 24px;
     }
 
     /*Estilo registro*/
@@ -419,7 +509,5 @@
         font-family: 'concert one', sans-serif;
         margin-left: auto;
         margin-right: auto;
-
-
     }
     
