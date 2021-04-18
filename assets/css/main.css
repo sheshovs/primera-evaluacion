@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&display=swap');
-
-
     *{
         margin: 0;
         padding: 0;
@@ -582,6 +580,8 @@
         color:white;
         text-align: center;
     }
+
+    /* Ajuste de dispositivos */
     @media (max-width:1180px){
         .barra-busqueda{
             width: 300px;
