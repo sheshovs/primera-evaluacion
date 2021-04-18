@@ -300,6 +300,7 @@
         text-decoration: underline;
     }
     .registro .botonreg {
+        display: block;
         width: 100;
         background: #1f53c5;
         border: none;
@@ -307,4 +308,67 @@
         color: white;
         margin: 16px 0;
         font-size: 16px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /*Estilo login*/
+
+    .login{
+        width: 400px;
+        background-color: darkslateblue;
+        padding: 30px;
+        margin: auto;
+        margin-top: 100px;
+        border-radius: 4px;
+        font-family: 'concert one', sans-serif;
+        color:white;
+        box-shadow: 7px 13px 37px #000;
+    }
+    .login h4{
+        text-align: center;
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    .contrologin {
+        width: 100%;
+        background:#24303c;
+        padding: 10px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+        border: 1px solid #1f53c5;
+        font-family: 'concert one', sans-serif;
+        font-size: 18px;
+        color:white;
+    }
+    .login p{
+        height: 40px;
+        text-align: right;
+        font-size: 15px;
+        line-height: 40px;
+    }
+    #centro{
+        height: 40px;
+        text-align: center;
+        font-size: 15px;
+        line-height: 40px;
+    }
+    .login a{
+        color: white;
+    }
+    .login a:hover{
+        color: #000;
+        text-decoration: underline;
+    }
+    .login .botonreg {
+        display: block;
+        width: 100;
+        background: #1f53c5;
+        border: none;
+        padding: 12px;
+        color: white;
+        margin: 16px 0;
+        font-size: 16px;
+        margin-left: auto;
+        margin-right: auto;
     }
