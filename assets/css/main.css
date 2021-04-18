@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&display=swap');
+
+
     *{
         margin: 0;
         padding: 0;
@@ -7,7 +9,7 @@
     /*Cuerpo principal*/
     body{
         cursor:url('../img/cursor.png'), auto;
-        font-family: 'Concert One', sans-serif;
+        font-family: 'Amaranth', sans-serif;
     }
     #fondo{
         position: fixed;
@@ -36,7 +38,7 @@
     }
     .encabezado{
         width: 100%;
-        height: 70px;
+        height: 120px;
     }
     .container{
         width: 90%;
@@ -176,7 +178,7 @@
     main.contenedor{
         width: 90%;
         max-width: 1200px;
-        margin: 50px auto 0 auto;
+        margin: 30px auto 0 auto;
     }
     .imagen-principal{
         background-image: url('/assets/img/game1.webp');
@@ -190,7 +192,7 @@
         color:white;
         border-radius: 30px;
         padding: 50px;
-        font-weight: 100;
+        font-weight: 400;
         box-shadow: 0 5px 20px rgba(255, 255, 255, .2);
         margin-bottom: 50px;
     }
@@ -224,7 +226,6 @@
     }
     .imagen-juego1 p{
         font-size: 16px;
-        
     }
     .imagen-juego2{
         display: flex;
@@ -260,13 +261,13 @@
         color: white;
         text-transform: uppercase;
         font-size: 20px;
-        font-weight: 100;
-        font-family: 'Concert One', sans-serif;
+        font-weight: 400;
+        font-family: 'Amaranth', sans-serif;
         box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
     }
     .btn-precio h3{
         font-size: 54px;
-        font-weight: 100;
+        font-weight: 400;
     }
 
     .titulo-juegos{
@@ -351,163 +352,209 @@
     /*Estilo registro*/
 
     .registro{
-        width: 400px;
-        background-color: darkslateblue;
-        padding: 30px;
-        margin: auto;
-        margin-top: 100px;
-        border-radius: 4px;
-        font-family: 'concert one', sans-serif;
+        width: 450px;
+        background-color: rgba(0,0,0,.2);
+        border:1px solid rgba(255 , 255, 255,.1);
+        padding: 30px 50px;
+        margin: 0 auto;
+        margin-top: 50px;
+        border-radius: 15px;
+        font-family: 'Amaranth', sans-serif;
         color:white;
-        box-shadow: 7px 13px 37px #000;
+        box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.8);
     }
     .registro h4{
-        font-size: 22px;
-        margin-bottom: 20px;
+        text-align: center;
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+    .registro label, .login label{
+        font-size:18px;
+        display: block;
+        margin-bottom: 5px;
     }
     .controreg {
         width: 100%;
-        background:#24303c;
+        background: rgba(0, 0, 0, .3);
         padding: 10px;
         border-radius: 4px;
-        margin-bottom: 16px;
-        border: 1px solid #1f53c5;
-        font-family: 'concert one', sans-serif;
+        margin-bottom: 10px;
+        border: 1px solid rgb(3, 91, 107);
+        font-family: 'Amaranth', sans-serif;
         font-size: 18px;
         color:white;
+        outline: none;
     }
     .registro p{
         height: 40px;
         text-align: center;
-        font-size: 15px;
+        font-size: 16px;
         line-height: 40px;
+
+    }
+    .terminos{
+        margin-top: 5px;
+        text-align: center;
+        font-size: 16px;
+
+    }
+    .tyc{
+        margin-right: 5px;
+        outline: none;
     }
     .registro a{
+        font-size: 16px;
         color: white;
+        transition: color .2s ease;
     }
     .registro a:hover{
-        color: #000;
+        color: rgb(43, 188, 214);
         text-decoration: underline;
     }
+
     .registro .botonreg {
         display: block;
-        width: 100;
-        background: #1f53c5;
+        margin: 15px auto;
+        width: 200px;
+        height: 50px;
+        background: rgb(3, 91, 107);
         border: none;
+        border-radius: 5px;
         padding: 12px;
         color: white;
-        margin: 16px 0;
         font-size: 16px;
-        margin-left: auto;
-        margin-right: auto;
+        outline: none;
+        font-family: 'Amaranth', sans-serif;
+        cursor:url('../img/mano.png'), pointer;
+        transition: background .2s ease;
+    }
+
+    .registro .botonreg:hover{
+        background: rgb(4, 106, 124);
     }
 
     /*Estilo login*/
 
     .login{
-        width: 400px;
-        background-color: darkslateblue;
-        padding: 30px;
-        margin: auto;
-        margin-top: 100px;
-        border-radius: 4px;
-        font-family: 'concert one', sans-serif;
+        width: 450px;
+        background-color: rgba(0,0,0,.2);
+        border:1px solid rgba(255 , 255, 255,.1);
+        padding: 30px 50px;
+        margin: 0 auto;
+        margin-top: 50px;
+        border-radius: 15px;
+        font-family: 'Amaranth', sans-serif;
         color:white;
-        box-shadow: 7px 13px 37px #000;
+        box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.8);
     }
     .login h4{
         text-align: center;
-        font-size: 22px;
-        margin-bottom: 20px;
+        font-size: 32px;
+        margin-bottom: 30px;
     }
     .contrologin {
         width: 100%;
-        background:#24303c;
+        background: rgba(0, 0, 0, .3);
         padding: 10px;
         border-radius: 4px;
         margin-bottom: 16px;
-        border: 1px solid #1f53c5;
-        font-family: 'concert one', sans-serif;
+        border: 1px solid rgb(3, 91, 107);
+        font-family: 'Amaranth', sans-serif;
         font-size: 18px;
         color:white;
+        outline: none;
     }
     .login p{
-        height: 40px;
-        text-align: right;
-        font-size: 15px;
-        line-height: 40px;
+        height: 30px;
+        text-align: center;
+        font-size: 16px;
+        line-height: 30px;
     }
     #centro{
+        width: 100%;
         height: 40px;
         text-align: center;
-        font-size: 15px;
-        line-height: 40px;
+        font-size: 16px;
     }
     .login a{
+        font-size: 16px;
         color: white;
+        transition: color .2s ease;
     }
     .login a:hover{
-        color: #000;
+        color: rgb(43, 188, 214);
         text-decoration: underline;
     }
     .login .botonreg {
         display: block;
-        width: 100;
-        background: #1f53c5;
+        margin: 15px auto;
+        width: 200px;
+        height: 50px;
+        background: rgb(3, 91, 107);
         border: none;
+        border-radius: 5px;
         padding: 12px;
         color: white;
-        margin: 16px 0;
         font-size: 16px;
-        margin-left: auto;
-        margin-right: auto;
+        outline: none;
+        font-family: 'Amaranth', sans-serif;
+        cursor:url('../img/mano.png'), pointer;
+        transition: background .2s ease;
+    }
+
+    .login .botonreg:hover{
+        background: rgb(4, 106, 124);
     }
 
     /*Estilo Recover*/
     .recover{
-        width: 500px;
-        background-color: rgb(28, 19, 88);
-        padding: 30px;
-        margin: auto;
-        margin-top: 100px;
-        border-radius: 4px;
-        font-family: 'concert one', sans-serif;
+        width: 450px;
+        background-color: rgba(0,0,0,.2);
+        border:1px solid rgba(255 , 255, 255,.1);
+        padding: 30px 50px;
+        margin: 0 auto;
+        margin-top: 50px;
+        border-radius: 15px;
+        font-family: 'Amaranth', sans-serif;
         color:white;
-        box-shadow: 7px 13px 37px #000;
+        box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.8);
     }
     .recover h4{
         text-align: center;
-        font-size: 22px;
-        margin-bottom: 20px;
+        font-size: 32px;
+        margin-bottom: 30px;
     }    
     .recover .botonreg {
         display: block;
-        width: 100;
-        background: #c51f3b;
+        margin: 15px auto;
+        width: 200px;
+        height: 50px;
+        background: rgb(3, 91, 107);
         border: none;
+        border-radius: 5px;
         padding: 12px;
         color: white;
-        margin: 16px 0;
         font-size: 16px;
-        font-family: 'concert one', sans-serif;
-        margin-left: auto;
-        margin-right: auto;
+        outline: none;
+        font-family: 'Amaranth', sans-serif;
+        cursor:url('../img/mano.png'), pointer;
+        transition: background .2s ease;
+    }
+    .recover .botonreg:hover{
+        background: rgb(4, 106, 124);
     }
     .recover p{
         margin-bottom: 20px;
+        text-align: justify;
     }
-    .recover button {
-
-        display: flexbox;
-        width: 100;
-        background: #c51f3b;
-        border: none;
-        padding: 12px;
-        color: white;
-        margin: 16px 0;
+    .recover p a{
         font-size: 16px;
-        font-family: 'concert one', sans-serif;
-        margin-left: auto;
-        margin-right: auto;
+        color: white;
+        transition: color .2s ease;
     }
+    .recover p a:hover{
+        color: rgb(43, 188, 214);
+        text-decoration: underline;
+    }
+
     
