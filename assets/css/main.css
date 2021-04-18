@@ -33,7 +33,7 @@
     .contenedor-principal{
         position: absolute;
         width: 100%;
-        height: 100vh;
+        min-height: 100vh;
         z-index: 10;
     }
     .encabezado{
@@ -178,7 +178,7 @@
     main.contenedor{
         width: 90%;
         max-width: 1200px;
-        margin: 30px auto 0 auto;
+        margin: 30px auto 150px auto;
     }
     .imagen-principal{
         background-image: url('/assets/img/game1.webp');
@@ -186,15 +186,21 @@
         background-position: center bottom;
         width: 100%;
         height: 500px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
         color:white;
         border-radius: 30px;
-        padding: 50px;
         font-weight: 400;
         box-shadow: 0 5px 20px rgba(255, 255, 255, .2);
         margin-bottom: 50px;
+    }
+    .oscuro{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        background-color: rgba(0, 0, 0, .3);
+        padding: 50px;
+        border-radius: 30px;
     }
     .imagen-principal h1{
         font-size: 56px;
@@ -208,18 +214,25 @@
         margin-bottom: 50px;
     }
     .imagen-juego1{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
+        
         background-image: url('/assets/img/game2.png');
         background-size:cover;
         background-position: top center;
         width: 48%;
         height: 300px;
         color: white;
-        padding: 50px;
         border-radius: 30px;
         box-shadow: 0 5px 20px rgba(255, 255, 255, .2);
+    }
+    .oscuro1,.oscuro2{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 50px;
+        border-radius: 30px;
+        background-color: rgba(0, 0, 0, .3);
     }
     .imagen-juego1 h3{
         font-size: 40px;
@@ -228,9 +241,6 @@
         font-size: 16px;
     }
     .imagen-juego2{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
         background-image: url('/assets/img/game3.jpg');
         background-size:cover;
         background-position: top center;
@@ -238,7 +248,6 @@
         height: 300px;
         border-radius: 30px;
         color: white;
-        padding: 50px;
         box-shadow: 0 5px 20px rgba(255, 255, 255, .2);
     }
     .imagen-juego2 h3{
@@ -556,5 +565,83 @@
         color: rgb(43, 188, 214);
         text-decoration: underline;
     }
+    .registro, .login, .recover{
+        margin-bottom: 150px;
+    }
 
+    footer {
+        position: absolute;
+        bottom: 0;
+        margin-top: 100px;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, .2);
+        color:white;
+        text-align: center;
+    }
+    @media (max-width:1180px){
+        .barra-busqueda{
+            width: 300px;
+        }
+    }
+    @media (max-width:900px){
+        .barra-busqueda{
+            width: 200px;
+        }
+        .juegos-secundarios{
+            flex-direction: column;
+        }
+        .imagen-juego1, .imagen-juego2 {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+    @media (max-width:785px){
+        .busqueda{
+            display: none;
+        }
+    }
+    @media (max-width:700px){
+        .oscuro{
+            padding: 20px 30px;
+        }
+        .imagen-principal p {
+            display: none;
+        }
+        .oscuro1 , .oscuro2 {
+            padding: 20px 30px;
+        }
+        .imagen-juego1 p, .imagen-juego2 p{
+            display: none;
+        }
+    }
+
+    @media (max-width:520px){
+        .logo{
+            margin-top: 20px;
+        }
+        .container{
+            flex-direction: column;
+        }
+        
+        .btn-precio{
+            display: none;
+        }
+        .registro, .login, .recover{
+            width: 90%;
+            padding: 20px;
+        }
+    }
+
+    @media (max-width:400px){
+        .imagen-principal h1{
+            font-size: 42px;
+        }
+        .imagen-juego1 h3, .imagen-juego2 h3{
+            font-size: 24px;
+        }
+    }
     
