@@ -179,7 +179,7 @@
         margin: 30px auto 150px auto;
     }
     .imagen-principal{
-        background-image: url('/assets/img/game1.webp');
+        background-image: url('../img/game1.webp');
         background-size: cover;
         background-position: center bottom;
         width: 100%;
@@ -213,7 +213,7 @@
     }
     .imagen-juego1{
         
-        background-image: url('/assets/img/game2.png');
+        background-image: url('../img/game2.png');
         background-size:cover;
         background-position: top center;
         width: 48%;
@@ -239,7 +239,7 @@
         font-size: 16px;
     }
     .imagen-juego2{
-        background-image: url('/assets/img/game3.jpg');
+        background-image: url('../img/game3.jpg');
         background-size:cover;
         background-position: top center;
         width: 48%;
